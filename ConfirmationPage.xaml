@@ -1,0 +1,61 @@
+﻿<Window x:Class="HomeTechServices.ConfirmationPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTechServices"
+        mc:Ignorable="d"
+        Title="ConfirmationPage" Height="450" Width="600">
+    <StackPanel>
+        <Label Content="Order Invoice" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontFamily="Cambria Math" FontSize="20"/>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="30">
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="7">
+                <StackPanel Margin="5">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Technician Name" FontWeight="Bold" Width="110" FontFamily="Cambria Math"/>
+                    <Label x:Name="technician" HorizontalAlignment="Left" Width="180"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Number" FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                    <Label x:Name="number" HorizontalAlignment="Left" Width="180"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Email" FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                    <Label x:Name="email" HorizontalAlignment="Left" Width="180"/>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Date of Visit" FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                    <Label x:Name="date" HorizontalAlignment="Left" Width="180"/>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Time of Visit" FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                    <Label x:Name="time" HorizontalAlignment="Left" Width="180"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Address" FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                    <Label x:Name="address" HorizontalAlignment="Left" Width="180" />
+                    
+                </StackPanel>
+                    
+                    <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+                        <Label Content="Payment Details " FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left" Content="Card Charged: " FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                            <Label x:Name="card" HorizontalAlignment="Left" Width="180"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Your Total" FontWeight="Bold" Width="100" FontFamily="Cambria Math"/>
+                            <Label x:Name="total" HorizontalAlignment="Left" Width="180"/>
+                        </StackPanel>
+                    </StackPanel>
+
+            </StackPanel>
+            </Border>
+
+        </StackPanel>
+        <Button Click="Button_Click"  Content="Go To Main Menu" HorizontalAlignment="Center" />
+    </StackPanel>
+</Window>

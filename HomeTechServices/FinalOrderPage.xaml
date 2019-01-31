@@ -1,0 +1,29 @@
+﻿<Window x:Class="HomeTechServices.FinalOrderPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTechServices"
+        mc:Ignorable="d"
+        Title="FinalOrderPage" Height="450" Width="800">
+    <Grid>
+        <Button Content="Confirm Order" Click="Confirm_Click" HorizontalAlignment="Left" Margin="445,353,0,0" VerticalAlignment="Top" Width="110" Height="24"/>
+        <Button Content="Cancel Order" Click="Cancel_Click"  HorizontalAlignment="Left" Margin="579,353,0,0" VerticalAlignment="Top" Width="110" Height="24"/>
+        <ListView x:Name="serviceList" HorizontalAlignment="Left" Height="273" Margin="32,42,0,0" VerticalAlignment="Top" Width="472" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Service Order" Width="250"  DisplayMemberBinding="{Binding Service_Name}"></GridViewColumn>
+                    <GridViewColumn Header="Price" Width="250"  DisplayMemberBinding="{Binding Service_Cost}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Total: " HorizontalAlignment="Left" Margin="539,292,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.201,0.303" Height="29" Width="54"/>
+        <Label x:Name="total" Content="" HorizontalAlignment="Left" Margin="588,290,0,0" VerticalAlignment="Top" Height="27" Width="75"/>
+        <Label Content="Technician:" HorizontalAlignment="Left" Margin="509,262,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="technician" HorizontalAlignment="Left" Margin="600,271,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="543,219,0,0" VerticalAlignment="Top"/>
+        <Label Content="Time:" HorizontalAlignment="Left" Margin="543,185,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="time" HorizontalAlignment="Left" Margin="599,184,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="date" HorizontalAlignment="Left" Margin="600,221,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

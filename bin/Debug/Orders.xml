@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order CustomerName="Alex Smith" CustomerAddress="123 Elmo Ln Orlando FL 33614" Total="$1480" Date="12/19/2018" Time="01:00 PM">
+    <Card CardType="System.Windows.Controls.ComboBoxItem: Discover" CardNumber="123414234123" Expiration="06/22" CardName="Alex Smith" CVV="123" />
+    <Technician Name="Rosalynd Pengilly" PhoneNumber="(290) 4704890" Email="rpengilly2@zimbio.com" StartTime="10:00 AM" EndTime="10:00 PM" />
+    <ServiceList Service_Name="Wifi Installation" Service_Cost="200" />
+    <ServiceList Service_Name="Smart Light Installation" Service_Cost="600" />
+    <ServiceList Service_Name="Wire Installation" Service_Cost="250" />
+    <ServiceList Service_Name="Security System Installation" Service_Cost="430" />
+  </Order>
+  <Order CustomerName="Alex Smith" CustomerAddress="123 Elmo Ln Orlando FL 33614" Total="$990" Date="12/19/2018" Time="01:00 PM">
+    <Card CardType="System.Windows.Controls.ComboBoxItem: Discover" CardNumber="123414234123" Expiration="06/22" CardName="Alex Smith" CVV="123" />
+    <Technician Name="Mei Hatchard" PhoneNumber="(928) 7582624" Email="mhatchard3@techcrunch.com" StartTime="08:00 AM" EndTime="09:00 PM" />
+    <ServiceList Service_Name="Service Calls" Service_Cost="190" />
+    <ServiceList Service_Name="Wifi Installation" Service_Cost="200" />
+    <ServiceList Service_Name="Smart Light Installation" Service_Cost="600" />
+  </Order>
+  <Order CustomerName="Jay Patel" CustomerAddress="123 Test Ln Tampa FL 12345" Total="$590" Date="12/19/2018" Time="01:00 PM">
+    <Card CardType="System.Windows.Controls.ComboBoxItem: American Express" CardNumber="123412342124" Expiration="03/19" CardName="Jay Patel" CVV="123" />
+    <Technician Name="Carney Dumberrill" PhoneNumber="(478) 1016236" Email="cdumberrill1@dedecms.com" StartTime="08:00 AM" EndTime="10:00 PM" />
+    <ServiceList Service_Name="Service Calls" Service_Cost="190" />
+    <ServiceList Service_Name="Wireless Camera Installation" Service_Cost="400" />
+  </Order>
+  <Order CustomerName="Jay Patel" CustomerAddress="123 Street Tampa FL 33513" Total="$500" Date="12/26/2018" Time="11:00 AM">
+    <Card CardType="System.Windows.Controls.ComboBoxItem: American Express" CardNumber="123412341234" Expiration="01/22" CardName="Jay Patel" CVV="123" />
+    <Technician Name="Orville Chugg" PhoneNumber="(131) 7156504" Email="ochugg5@photobucket.com" StartTime="09:00 AM" EndTime="12:00 PM" />
+    <ServiceList Service_Name="Device and System Installation" Service_Cost="300" />
+    <ServiceList Service_Name="Wifi Installation" Service_Cost="200" />
+  </Order>
+</ArrayOfOrder>

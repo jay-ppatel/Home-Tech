@@ -1,0 +1,30 @@
+﻿<Window x:Class="HomeTechServices.HomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTechServices"
+        mc:Ignorable="d"
+        Title="Home Page" Height="490.299" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Log Out" Click="MenuItem_Click_1"/>
+        </Menu>
+        <Grid DockPanel.Dock="Top">
+            <Label Content="Welcome to Home Tech Services" Margin="196,7,200,0" VerticalAlignment="Top" FontSize="24" FontFamily="Segoe UI Black" HorizontalAlignment="Center" Width="399"/>
+            <Grid HorizontalAlignment="Left" Height="340" Margin="43,52,0,0" VerticalAlignment="Top" Width="713">
+                <Label Content="Upcoming Appointment" Margin="9,8,528,137"/>
+                <ListView x:Name="Upcoming" HorizontalAlignment="Left" Margin="11,40,0,11" Width="680">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="680"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+
+            <Button Click="MenuItem_Click"  Content="New Order" HorizontalAlignment="Left" Height="26" Margin="647,403,0,0" VerticalAlignment="Top" Width="87"/>
+
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfUserAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserAccount Username="alexandrab" Password="123456" Name="Alexandra Bagarra" />
+  <UserAccount Username="alexandranvb@gmail.com" Password="123456" Name="Alexandra Bagarra" />
+  <UserAccount Username="alexandranvb@gmail.com" Password="123456" Name="Alex Bagarra" />
+  <UserAccount Username="alexandranvb@gmail.com" Password="123456" Name="Alexandra Bagarra" />
+  <UserAccount Username="alexandranvb@gmail.com" Password="123456" Name="Alexandra" />
+  <UserAccount Username="jayesh2397@yahoo.com" Password="123456" />
+</ArrayOfUserAccount>

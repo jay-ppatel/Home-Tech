@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfUserAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserAccount FirstName="Alex" LastName="Smith" Password="alexandra" Email="alexandranvb@gmail.com" Number="1231231234">
+    <UserAddress StreetNumber="123" StreetName="Street Ln" City="Tampa" State="FL" ZipCode="33213" />
+    <UserCard CardType="System.Windows.Controls.ComboBoxItem: American Express" CardNumber="123412341234" Expiration="06/20" CardName="Alex Smith" CVV="123" />
+  </UserAccount>
+  <UserAccount FirstName="Alex" LastName="Smith" Password="123456" Email="alex@gmail.com" Number="3122542342">
+    <UserAddress StreetNumber="123" StreetName="Elmo Ln" City="Orlando" State="FL" ZipCode="33614" />
+    <UserCard CardType="System.Windows.Controls.ComboBoxItem: Discover" CardNumber="123414234123" Expiration="06/22" CardName="Alex Smith" CVV="123" />
+  </UserAccount>
+  <UserAccount FirstName="Jay" LastName="Patel" Password="123456" Email="jay@gmail.com" Number="4132431234">
+    <UserAddress StreetNumber="123" StreetName="Test Ln" City="Tampa" State="FL" ZipCode="12345" />
+    <UserCard CardType="System.Windows.Controls.ComboBoxItem: American Express" CardNumber="123412342124" Expiration="03/19" CardName="Jay Patel" CVV="123" />
+  </UserAccount>
+  <UserAccount FirstName="Jay" LastName="Patel" Password="123456" Email="Jay" Number="1231231234">
+    <UserAddress StreetNumber="123" StreetName="Street" City="Tampa" State="FL" ZipCode="33513" />
+    <UserCard CardType="System.Windows.Controls.ComboBoxItem: American Express" CardNumber="123412341234" Expiration="01/22" CardName="Jay Patel" CVV="123" />
+  </UserAccount>
+</ArrayOfUserAccount>

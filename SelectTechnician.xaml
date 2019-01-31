@@ -1,0 +1,47 @@
+﻿<Window x:Class="HomeTechServices.SelectTechnician"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:HomeTechServices"
+        mc:Ignorable="d"
+        Title="SelectTechnician" Height="300" Width="350">
+    <StackPanel>
+        <Label Content="Select Date/Time" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontFamily="Cambria Math" FontSize="20"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="25" >
+            <Label x:Name="Warning" Content="Please complete all fields" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Top" Width="153" FontSize="12" Visibility="Hidden"/>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label Content="Select Date" HorizontalAlignment="Left" FontFamily="Cambria Math" FontWeight="Bold"/>
+                <DatePicker x:Name="date" SelectedDate="{Binding SelectedDate}" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="120"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label Content="Select Time" HorizontalAlignment="Left" FontWeight="Bold" FontFamily="Cambria Math"/>
+                <ComboBox x:Name="time" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" 
+                          SelectedItem="{Binding SelectedTime, Mode=OneWayToSource}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding FilterListCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+            </StackPanel>
+
+                <!--<Label Content="Select Technician" FontFamily="Cambria Math" HorizontalAlignment="Left" FontWeight="Bold"/>
+                <ListBox ItemsSource="{Binding TechnicianCollection}" SelectedItem="{Binding SelectedItem}"
+                 ItemTemplate="{StaticResource TechTemplate}"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="400"/>
+                <local:TechnicianDisplay x:Name="display" DataContext="{Binding SelectTechnicianVM}"/>-->
+                <!--<ListView Name ="technicianList" SelectionMode="Single" HorizontalAlignment="Left" Height="242" VerticalAlignment="Top" Width="400">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name" Width="400"  ></GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>-->
+
+        </StackPanel>
+        <Button Content="Cancel" Click="Button_Click" HorizontalAlignment="Right" Margin="20"  VerticalAlignment="Top" Width="80"/>
+
+    </StackPanel>
+</Window>
